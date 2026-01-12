@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../commons/constants/api_urls/api_urls.dart';
+import '../utils/constants/api_urls/api_urls.dart';
 
 class DioClient {
   final Dio _dio;
@@ -44,7 +44,7 @@ class DioClient {
 
   factory DioClient() => _instance;
 
-/// {OPTIONAL}
+  /// {OPTIONAL}
   // void setToken(String token) {
   //   _dio.options.headers['Authorization'] = "Bearer $token";
   // }
